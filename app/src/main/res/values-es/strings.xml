@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Próximas Películas</string>
+    <string name="title_activity_details">Detalles de la Película</string>
+    <string name="overview_is_missing">Resumen no proporcionado por el servidor.</string>
+    <string name="title_is_missing">Título no proporcionado por el servidor.</string>
+    <string name="genre_is_missing">Género no proporcionado por el servidor.</string>
+    <string name="release_date_is_missing">Fecha Lanzamiento no proporcionada por el servidor.</string>
+    <string name="failed_to_access_the_server">Error al acceder al servidor. Por favor revise su conexion a internet</string>
+    <string name="try_again">Intentar de Nuevo</string>
+    <string name="trying_to_connect">Intentando conectarse al servidor.</string>
+
+    <!--genres-->
+    <string-array name="genres_array">
+        <item>28:Acción</item>
+        <item>12:Aventura</item>
+        <item>16:Animación</item>
+        <item>35:Comedia</item>
+        <item>80:Crimen</item>
+        <item>99:Documental</item>
+        <item>18:Drama</item>
+        <item>10751:Familia</item>
+        <item>14:Fantasía</item>
+        <item>36:Historia</item>
+        <item>27:Terror</item>
+        <item>10402:Música</item>
+        <item>9648:Misterio</item>
+        <item>10749:Romance</item>
+        <item>878:Ciencia Ficción</item>
+        <item>10770:Película de TV</item>
+        <item>53:Suspense</item>
+        <item>10752:Bélica</item>
+        <item>37:Western</item>
+    </string-array>
+
+    <string name="movie_backdrop_image">Imagen de fondo</string>
+    <string name="movie_poster">Imagen del cartel</string>
+    <string name="movie_title">Título</string>
+    <string name="movie_overview">Descripción</string>
+    <string name="movie_genres">Géneros</string>
+    <string name="movie_release_date">" Release date   Traduzir do: Inglês 12/5000 fecha de lanzamiento"</string>
+</resources>

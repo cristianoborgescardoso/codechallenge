@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Upcoming Movies</string>
+    <string name="title_activity_details">Movie Details</string>
+
+    <!--Api Config-->
+    <string name="api_base_url" translatable="false">https://api.themoviedb.org/3/</string>
+    <string name="api_key" translatable="false">1f54bd990f1cdfb230adb312546d765d</string>
+    <string name="date_source_format" translatable="false">yyyy-MM-dd</string>
+    <string name="image_base_url" translatable="false">https://image.tmdb.org/t/p/</string>
+
+    <!--Country and Language-->
+    <bool name="use_default_language_and_region" translatable="false">true
+    </bool> <!--region == country-->
+    <!--if (use_default_language_and_region == true), otherwise the language and region will be acquire from the operational system-->
+    <string name="default_region" translatable="false">US</string> <!-- BR, US, ES ...-->
+    <string name="default_language" translatable="false">en-US</string> <!-- pt-BR, en-US, es-ES ...-->
+
+    <string name="title_is_missing" translatable="true">Title not provided by server</string>
+    <string name="release_date_is_missing" translatable="true">Release date not provided by server</string>
+    <string name="genre_is_missing" translatable="true">Genres not provided by server</string>
+    <string name="overview_is_missing" translatable="true">Overview not provided by server</string>
+
+    <!--network_failed_layout-->
+    <string name="try_again">Try Again</string>
+    <string name="failed_to_access_the_server">Failed to access the server.\nPlease check your internet connection.</string>
+    <string name="trying_to_connect">Trying to connect to the server.</string>
+
+    <!--Content description-->
+    <string name="movie_poster">Poster image</string>
+    <string name="movie_backdrop_image">Backdrop image</string>
+    <string name="movie_title">Title</string>
+    <string name="movie_genres">Genres</string>
+    <string name="movie_overview">Overview</string>
+    <string name="movie_release_date">Release date</string>
+
+
+    <!--genres <item>id:name</item> -->
+    <string-array name="genres_array">
+        <item>28:Action</item>
+        <item>12:Adventure</item>
+        <item>16:Animation</item>
+        <item>35:Comedy</item>
+        <item>80:Crime</item>
+        <item>99:Documentary</item>
+        <item>18:Drama</item>
+        <item>10751:Family</item>
+        <item>14:Fantasy</item>
+        <item>36:History</item>
+        <item>27:Horror</item>
+        <item>10402:Music</item>
+        <item>9648:Mystery</item>
+        <item>10749:Romance</item>
+        <item>878:Science Fiction</item>
+        <item>10770:TV Movie</item>
+        <item>53:Thriller</item>
+        <item>10752:War</item>
+        <item>37:Western</item>
+    </string-array>
+</resources>
