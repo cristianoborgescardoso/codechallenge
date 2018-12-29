@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Filmes Lançamento</string>
+    <string name="title_activity_details">Detalhes do Filme</string>
+    <string name="overview_is_missing">Sinopse não fornecida.</string>
+    <string name="title_is_missing">Título não fornecido pelo servidor.</string>
+    <string name="genre_is_missing">Gênero não fornecido pelo servidor.</string>
+    <string name="release_date_is_missing">Data de lançamento não fornecida pelo servidor.</string>
+    <string name="try_again">Tentar Novamente</string>
+    <string name="failed_to_access_the_server">Falha ao acessasr o servidor. Por favor verifique a sua conexão com a internet.</string>
+    <string name="trying_to_connect">Tentando conectarse ao servidor.</string>
+
+    <!--genres-->
+    <string-array name="genres_array">
+        <item>28:Ação</item>
+        <item>12:Aventura</item>
+        <item>16:Animação</item>
+        <item>35:Comédia</item>
+        <item>80:Crime</item>
+        <item>99:Documentário</item>
+        <item>18:Drama</item>
+        <item>10751:Família</item>
+        <item>14:Fantasia</item>
+        <item>36:História</item>
+        <item>27:Terror</item>
+        <item>10402:Música</item>
+        <item>9648:Mistério</item>
+        <item>10749:Romance</item>
+        <item>878:Ficção Científica</item>
+        <item>10770:Cinema TV</item>
+        <item>53:Thriller</item>
+        <item>10752:Guerra</item>
+        <item>37:Faroeste</item>
+    </string-array>
+    <string name="movie_poster">Imagem do oster</string>
+    <string name="movie_backdrop_image">Imagem da contra capa</string>
+    <string name="movie_title">Título</string>
+    <string name="movie_genres">Gênero</string>
+    <string name="movie_overview">Descrição</string>
+    <string name="movie_release_date">Data de lançamento</string>
+</resources>
