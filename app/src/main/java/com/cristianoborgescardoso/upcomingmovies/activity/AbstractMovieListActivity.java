@@ -27,11 +27,10 @@ import com.cristianoborgescardoso.upcomingmovies.model.AbstractMovieModel;
 import com.cristianoborgescardoso.upcomingmovies.modelJson.Movie;
 
 
-
-
 public abstract class AbstractMovieListActivity extends AppCompatActivity implements NetworkStateLiveDataObserver {
 
     private final String TAG;
+    private final Class<? extends AbstractMovieModel> movieModelClass;
     private AbstractMovieModel moviewModel;
     private MainRecyclerViewAdapter adapter;
     private RecyclerView rvMain;
@@ -39,11 +38,12 @@ public abstract class AbstractMovieListActivity extends AppCompatActivity implem
     private ProgressBar pbConnecting;
     private Button btTryAgain;
     private TextView tvMessage;
-    private final Class<? extends AbstractMovieModel> movieModelClass;
+    private int titleID;
 
-    public AbstractMovieListActivity(String TAG, Class<? extends AbstractMovieModel> movieModelClass) {
+    public AbstractMovieListActivity(String TAG, Class<? extends AbstractMovieModel> movieModelClass, int title) {
         this.TAG = TAG;
         this.movieModelClass = movieModelClass;
+        this.titleID = titleID;
     }
 
     @Override
@@ -73,7 +73,7 @@ public abstract class AbstractMovieListActivity extends AppCompatActivity implem
         moviewModel.getMoviesPagedList().observe(this, new Observer<PagedList<Movie>>() {
             @Override
             public void onChanged(@Nullable PagedList<Movie> moviePagedList) {
-                Log.d(TAG, String.format("onChanged: moviePagedList.size(): '%s'", (moviePagedList==null)? "null":moviePagedList.size()));
+                Log.d(TAG, String.format("onChanged: moviePagedList.size(): '%s'", (moviePagedList == null) ? "null" : moviePagedList.size()));
                 adapter.submitList(moviePagedList);
             }
         });
@@ -104,8 +104,10 @@ public abstract class AbstractMovieListActivity extends AppCompatActivity implem
 
     @Override
     public void hideNoInternetPanel() {
-        viewNoData.setVisibility(View.GONE);
-        rvMain.setVisibility(View.VISIBLE);
+        if (viewNoData.getVisibility() == View.VISIBLE) {
+            viewNoData.setVisibility(View.GONE);
+            rvMain.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override

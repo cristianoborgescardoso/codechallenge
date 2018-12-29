@@ -50,7 +50,7 @@ public abstract class AbstractMovieDataSource extends PageKeyedDataSource<Long, 
 
                     printMovieDetails(moviesResponse.getMovieResponses());
                     networkStateMutableLiveData.postValue(NetworkState.LOADED);
-                    callback.onResult(moviesResponse.getMovieResponses(), null, (long) 2);
+                    callback.onResult(moviesResponse.getMovieResponses(), null, ApiConfig.API_DEFAULT_PAGE_KEY +1);
                 } else {
                     Log.e(TAG, "onResponse error " + response.message());
                     networkStateMutableLiveData.postValue(new NetworkState(NetworkState.Status.FAILED, response.message()));

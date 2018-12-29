@@ -9,7 +9,7 @@ import com.cristianoborgescardoso.upcomingmovies.dataSource.GenreDataSource;
 import java.util.Locale;
 
 public class ApiConfig {
-    public static final int API_DEFAULT_PAGE_KEY = 1;
+    public static final long API_DEFAULT_PAGE_KEY = 1;
     private static final String TAG = ApiConfig.class.getName();
     public static String API_BASE_URL = "https://api.themoviedb.org/3/";
     public static String API_KEY = "1f54bd990f1cdfb230adb312546d765d";

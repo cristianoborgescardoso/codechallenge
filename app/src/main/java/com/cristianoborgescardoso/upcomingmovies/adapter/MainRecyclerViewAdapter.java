@@ -71,12 +71,7 @@ public class MainRecyclerViewAdapter extends PagedListAdapter<Movie, RecyclerVie
 
     private void bindImage(ImageView imageView, String imageURL, ApiConfig.ImageSize imageSize) {
         try {
-            if (imageURL == null) {
-                imageView.setImageResource(R.drawable.ic_do_not_disturb_black_45dp);
-            } else {
-                Picasso.get().load(ApiConfig.getPosterBaseURL(imageSize) + imageURL).into(imageView);
-            }
-
+            Picasso.get().load(ApiConfig.getPosterBaseURL(imageSize) + imageURL).error(R.drawable.ic_no_image_avaliable_45dp).placeholder(R.drawable.ic_place_holder_gray_24dp).into(imageView);
         } catch (Exception ex) {
             Log.e(TAG, "Error While binding MovieItem image", ex);
         }
